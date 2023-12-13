@@ -4,28 +4,33 @@ This JavaScript script prevents image downloads by blocking access through commo
 
 **How It Works:**
 
-Converts images to canvas.
-Blocks canvas download.
-Removes image meta-data.
+1. This script replaces images with `<canvas>` elements.
+   
+2. The script blocks `HTMLCanvasElement.prototype.toBlob`, `HTMLCanvasElement.prototype.toDataURL` methods to prevent downloading of the canvas contents.
+   
+3. The script removes references to image files from HTML page <head> section and from the structured data section.
 
 **How to Use:**
 
+
+No configuration is necessary, just include the script to your page. For example:
+
 Download the script and add it to your web page using:
 
-html
-Copy code
+Html element `<script>`
+
 `<script src="ImageBlocker.js"></script>`
 
 Or
 
 Add the following line to your script:
 
-html
-Copy code
+html element code
 `<script src="https://raw.githubusercontent.com/SjomaNikitin/image-download-blocker/main/ImageBlocker.js"></script>`
 
-**Deficiencies:**
+**Limitations:**
 
-1. Does not instantly work with lazy-loaded images (loading="lazy").
-2. It is possible to download images from the browser inspector.
+1. The script doesn't work properly with lazy-loading images yet.
+
+2. User will still be able to download images using developer tools. This won't be fixed anytime soon. Unfortunately, there is no way to prevent user from opening developer tools.
 
