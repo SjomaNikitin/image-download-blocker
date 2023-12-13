@@ -1,24 +1,31 @@
-# ImageBlocker
-Image Download Blocker
-This Javascript script block image downlaod.
-You can't download it with extension or using "save image as"
+# Image Download Blocker
 
-How It works:
+This JavaScript script prevents image downloads by blocking access through common methods such as right-click "save image as" or downloading with browser extensions.
 
-1. Converting images to canvas.
-2. Blocking canvas download.
-3. Removing images meta-data.
+**How It Works:**
 
-How to use it:
+Converts images to canvas.
+Blocks canvas download.
+Removes image meta-data.
 
-Downlaod this script and add it to your page using <script src="ImageBlocker" ><script>
+**How to Use:**
 
-OR
+Download the script and add it to your web page using:
 
-Add <script src="https://raw.githubusercontent.com/SjomaNikitin/image-download-blocker/main/ImageBlocker.js" ><script> to your script
+html
+Copy code
+`<script src="ImageBlocker.js"></script>`
 
-Deficiencies:
+Or
 
-1. Doesn't istantly work with (loading = "lazy") images
-2. It's posible to download image from inspector.
+Add the following line to your script:
+
+html
+Copy code
+`<script src="https://raw.githubusercontent.com/SjomaNikitin/image-download-blocker/main/ImageBlocker.js"></script>`
+
+**Deficiencies:**
+
+1. Does not instantly work with lazy-loaded images (loading="lazy").
+2. It is possible to download images from the browser inspector.
 
