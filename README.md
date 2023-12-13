@@ -15,17 +15,10 @@ This JavaScript script prevents image downloads by blocking access through commo
 
 No configuration is necessary, just include the script to your page. For example:
 
-Download the script and add it to your web page using:
-
-Html element `<script>`
-
 `<script src="ImageBlocker.js"></script>`
 
 Or
 
-Add the following line to your script:
-
-html element code
 `<script src="https://raw.githubusercontent.com/SjomaNikitin/image-download-blocker/main/ImageBlocker.js"></script>`
 
 **Limitations:**
