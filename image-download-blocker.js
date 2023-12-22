@@ -1,7 +1,4 @@
 (function () {
-    const jquery = document.createElement("script");
-    jquery.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js";
-    document.head.appendChild(jquery);
 
     function waitForImageLoad(img, callback) {
         if (img.naturalWidth && img.naturalHeight) {
