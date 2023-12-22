@@ -19,7 +19,7 @@ No configuration is necessary, just include the script to your page. For example
 
 Or
 
-`<script src="https://raw.githubusercontent.com/SjomaNikitin/image-download-blocker/main/ImageBlocker.js"></script>`
+`<script src="https://raw.githubusercontent.com/SjomaNikitin/image-download-blocker/main/image-download-blocker.js"></script>`
 
 **Limitations:**
 
